@@ -23,6 +23,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Add repository link and refined description for the SecKill project.
+  const secKillHeading = [...document.querySelectorAll("#projects .project-card h3")].find(
+    (heading) => heading.textContent.trim() === "High-Performance & High-Concurrency Flash Sale System"
+  );
+
+  if (secKillHeading) {
+    const secKillCard = secKillHeading.closest(".project-card");
+    const projectUrl = "https://github.com/kirin-zhou/SecKill_GraduationProject/tree/master";
+
+    const description = secKillCard.querySelector("h3 + p");
+    if (description) {
+      description.textContent =
+        "Designed and implemented a high-performance flash-sale platform for small and medium-sized e-commerce businesses, addressing challenges such as sudden traffic surges that can overwhelm conventional online transaction systems. The system supports high-concurrency purchasing scenarios and is engineered for strong performance, scalability and stability through asynchronous processing, distributed caching and database optimisation.";
+    }
+
+    const headingLink = document.createElement("a");
+    headingLink.href = projectUrl;
+    headingLink.target = "_blank";
+    headingLink.rel = "noreferrer";
+    headingLink.textContent = secKillHeading.textContent;
+    secKillHeading.textContent = "";
+    secKillHeading.appendChild(headingLink);
+
+    if (!secKillCard.querySelector(".project-links")) {
+      const projectLinks = document.createElement("div");
+      projectLinks.className = "project-links";
+      projectLinks.innerHTML = `<a href="${projectUrl}" target="_blank" rel="noreferrer">View code ↗</a>`;
+      secKillCard.appendChild(projectLinks);
+    }
+  }
+
   // Reveal-on-scroll animation
   const revealElements = document.querySelectorAll(".reveal");
 
