@@ -345,11 +345,21 @@ a {
   color: var(--muted);
 }
 
+.project-card.featured > p {
+  max-width: none;
+  width: 100%;
+}
+
 .project-details {
   list-style: none;
   margin-top: 18px;
   margin-left: 22px;
   max-width: 980px;
+}
+
+.project-card.featured .project-details {
+  max-width: none;
+  width: calc(100% - 22px);
 }
 
 .project-details li {
@@ -581,6 +591,10 @@ a {
 
   .project-details {
     margin-left: 12px;
+  }
+
+  .project-card.featured .project-details {
+    width: calc(100% - 12px);
   }
 
   .project-details li {
