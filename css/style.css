@@ -347,37 +347,30 @@ a {
 
 .project-details {
   list-style: none;
-  margin-top: 26px;
-  display: grid;
-  gap: 14px;
+  margin-top: 22px;
   max-width: 980px;
 }
 
 .project-details li {
   position: relative;
-  padding: 14px 18px 14px 48px;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: #fafbfc;
-  color: #343a45;
-  line-height: 1.55;
-  font-size: 0.98rem;
+  padding-left: 20px;
+  margin-top: 10px;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.project-details li:first-child {
+  margin-top: 0;
 }
 
 .project-details li::before {
-  content: "✓";
+  content: "-";
   position: absolute;
-  left: 16px;
-  top: 14px;
-  width: 22px;
-  height: 22px;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: rgba(10, 102, 255, 0.1);
-  color: var(--accent);
-  font-size: 0.78rem;
-  font-weight: 800;
+  left: 0;
+  top: 0;
+  color: var(--muted);
+  font-weight: 600;
 }
 
 .tags {
@@ -586,13 +579,8 @@ a {
   }
 
   .project-details li {
-    padding: 13px 14px 13px 44px;
+    padding-left: 18px;
     font-size: 0.94rem;
-  }
-
-  .project-details li::before {
-    left: 14px;
-    top: 13px;
   }
 
   .skills-grid {
