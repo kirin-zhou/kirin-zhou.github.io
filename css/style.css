@@ -291,6 +291,7 @@ a {
 #projects .section-heading.wide p:last-child {
   max-width: none;
   width: 100%;
+  white-space: nowrap;
 }
 
 .section-copy {
@@ -547,6 +548,10 @@ a {
 
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  #projects .section-heading.wide p:last-child {
+    white-space: normal;
   }
 
   .nav {
