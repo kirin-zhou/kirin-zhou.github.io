@@ -278,9 +278,19 @@ a {
   margin-bottom: 48px;
 }
 
+#projects .section-heading.wide {
+  max-width: none;
+  width: 100%;
+}
+
 .section-heading.wide p:last-child {
   margin-top: 14px;
   color: var(--muted);
+}
+
+#projects .section-heading.wide p:last-child {
+  max-width: none;
+  width: 100%;
 }
 
 .section-copy {
