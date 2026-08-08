@@ -101,10 +101,16 @@
         <div class="section-heading wide reveal"><p class="eyebrow">Featured projects</p><h2>Selected work</h2><p>Projects are displayed in reverse chronological order, with the most recent work first.</p></div>
         <div class="project-grid">
           <article class="project-card featured reveal">
-            <div class="project-topline"><span class="project-index">01</span><span class="project-type">APR 2026 — AUG 2026 · AI · Computer Vision · Backend</span></div>
-            <h3>Multimodal AI Smart Home Security System</h3>
-            <p>A proactive smart-home security pipeline that aggregates camera events, samples image frames and uses a multimodal LLM to validate events before retaining or escalating them.</p>
-            <ul class="tags"><li>Python</li><li>FastAPI</li><li>Multimodal LLM</li><li>Computer Vision</li><li>REST API</li><li>FTP</li></ul>
+            <div class="project-topline"><span class="project-index">01</span><span class="project-type">APR 2026 — AUG 2026 · AI · IoT · Backend · Computer Vision</span></div>
+            <h3>Multimodal AI Proactive Security System</h3>
+            <p>Designed and implemented a Reolink-based proactive security system that receives FTP-triggered camera images, aggregates multi-channel events, samples representative frames, and uses a multimodal LLM to assess whether security action is required.</p>
+            <ul class="project-details">
+              <li>Built backend components for a Reolink-based proactive security pipeline, integrating camera/NVR APIs, FTP uploads, and REST API controls.</li>
+              <li>Implemented multi-channel camera monitoring, including channel start/stop, dynamic channel addition, filtering, status tracking, and event retrieval.</li>
+              <li>Developed event aggregation and frame sampling logic to convert FTP-uploaded images into structured security events for multimodal LLM analysis.</li>
+              <li>Optimised LLM image analysis cost by stitching sampled frames into a single visual input while retaining event sequence and context.</li>
+            </ul>
+            <ul class="tags"><li>Python</li><li>TypeScript</li><li>NestJS</li><li>REST API</li><li>FTP Server</li><li>Reolink API</li><li>AI</li><li>GPT-4o</li><li>Computer Vision</li><li>IoT</li></ul>
           </article>
 
           <article class="project-card reveal">
