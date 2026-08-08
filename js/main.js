@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
     year.textContent = new Date().getFullYear();
   }
 
+  // Slightly reduce the About section heading size for better visual balance.
+  const aboutHeading = document.querySelector("#about .section-heading h2");
+  if (aboutHeading) {
+    aboutHeading.style.fontSize = "clamp(2rem, 4vw, 3.5rem)";
+  }
+
   // Mobile navigation
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".nav");
