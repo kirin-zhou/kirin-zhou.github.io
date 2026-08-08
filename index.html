@@ -1,33 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kirin Zhou — Software Engineer in Sydney, Australia. Portfolio, projects, skills, education and contact information." />
+  <meta name="theme-color" content="#ffffff" />
   <title>Kirin Zhou | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Kirin Zhou home">KZ</a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Let's talk</a>
+      </nav>
+    </div>
+  </header>
 
-  <h1>Hi, I'm Kirin Zhou.</h1>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Software Engineer · Sydney, Australia</p>
+          <h1>Hi, I'm <span>Kirin Zhou.</span></h1>
+          <p class="hero-text">
+            I build reliable software and AI-powered systems, with interests in
+            full-stack development, computer vision and intelligent applications.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn secondary" href="#contact">Contact me</a>
+          </div>
+          <div class="hero-links">
+            <a href="https://github.com/kirin-zhou" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="#" aria-label="Add your LinkedIn profile URL">LinkedIn ↗</a>
+          </div>
+        </div>
 
-  <p>
-    Software Engineer based in Sydney, Australia.
-  </p>
+        <aside class="profile-card reveal" aria-label="Quick profile">
+          <div class="profile-badge">KZ</div>
+          <div>
+            <p class="profile-name">Kirin Zhou</p>
+            <p class="profile-legal">Shengqi (Kirin) Zhou</p>
+          </div>
+          <div class="profile-meta">
+            <div>
+              <span>Based in</span>
+              <strong>Sydney, Australia</strong>
+            </div>
+            <div>
+              <span>Focus</span>
+              <strong>Software · AI · Full Stack</strong>
+            </div>
+            <div>
+              <span>Status</span>
+              <strong>Open to opportunities</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-  <h2>About Me</h2>
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>Engineering practical software with a strong product mindset.</h2>
+        </div>
+        <div class="section-copy reveal">
+          <p>
+            I'm a software engineering postgraduate at the University of Sydney,
+            focused on building practical, maintainable systems. My recent work
+            combines backend engineering, computer vision and multimodal AI for
+            smart-home applications.
+          </p>
+          <p>
+            I enjoy turning ambiguous problems into clear technical solutions,
+            working across APIs, data flows, system integration and user-facing
+            experiences.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  <p>
-    I'm a Software Engineering master's student at the University of Sydney.
-  </p>
+    <section id="projects" class="section section-soft">
+      <div class="container">
+        <div class="section-heading wide reveal">
+          <p class="eyebrow">Featured projects</p>
+          <h2>Selected work</h2>
+          <p>Projects that demonstrate system design, implementation and applied AI.</p>
+        </div>
 
-  <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="project-card featured reveal">
+            <div class="project-topline">
+              <span class="project-index">01</span>
+              <span class="project-type">AI · Computer Vision · Backend</span>
+            </div>
+            <h3>Multimodal AI Smart Home Security System</h3>
+            <p>
+              A proactive smart-home security pipeline that aggregates camera events,
+              samples image frames and uses a multimodal LLM to validate events before
+              retaining or escalating them.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>Multimodal LLM</li>
+              <li>Computer Vision</li>
+              <li>REST API</li>
+              <li>FTP</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" aria-label="Add repository URL for smart home project">View code ↗</a>
+              <a href="#" aria-label="Add project case study URL">Case study ↗</a>
+            </div>
+          </article>
 
-  <p>More projects coming soon...</p>
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-index">02</span>
+              <span class="project-type">Full Stack</span>
+            </div>
+            <h3>Full-Stack Web Application</h3>
+            <p>
+              Replace this card with one of your strongest web projects. Focus on the
+              problem, your contribution and measurable result.
+            </p>
+            <ul class="tags">
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>SQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="#">View code ↗</a>
+            </div>
+          </article>
 
-  <h2>Contact</h2>
+          <article class="project-card reveal">
+            <div class="project-topline">
+              <span class="project-index">03</span>
+              <span class="project-type">Software Engineering</span>
+            </div>
+            <h3>Backend / Systems Project</h3>
+            <p>
+              Add another project that demonstrates API design, databases, distributed
+              systems, automation, testing or deployment.
+            </p>
+            <ul class="tags">
+              <li>API</li>
+              <li>Database</li>
+              <li>Git</li>
+              <li>Linux</li>
+            </ul>
+            <div class="project-links">
+              <a href="#">View code ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <p>GitHub: kirin-zhou</p>
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-heading wide reveal">
+          <p class="eyebrow">Technical skills</p>
+          <h2>Tools I work with</h2>
+        </div>
 
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Languages</h3>
+            <p>Python · Java · JavaScript · TypeScript · SQL</p>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Frontend</h3>
+            <p>HTML · CSS · React · Responsive UI</p>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Backend</h3>
+            <p>FastAPI · Node.js · REST APIs · Database integration</p>
+          </div>
+          <div class="skill-card reveal">
+            <h3>AI & Vision</h3>
+            <p>Computer Vision · Multimodal LLMs · AI application integration</p>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Engineering</h3>
+            <p>Git · GitHub · Linux · Docker · Testing · Debugging</p>
+          </div>
+          <div class="skill-card reveal">
+            <h3>Ways of working</h3>
+            <p>Problem solving · Documentation · Iterative development · Collaboration</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section-dark">
+      <div class="container two-col">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Education</p>
+          <h2>University of Sydney</h2>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <span class="timeline-date">2025 — 2026</span>
+            <h3>Master of Professional Engineering</h3>
+            <p>Software Engineering</p>
+            <p class="muted">Sydney, Australia</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-wrap reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's build something useful.</h2>
+        <p>
+          I'm open to software engineering opportunities in Australia.
+          Feel free to get in touch for roles, projects or professional conversations.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Email me</a>
+          <a class="btn secondary" href="https://github.com/kirin-zhou" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn secondary" href="#" aria-label="Add your LinkedIn profile URL">LinkedIn</a>
+        </div>
+
+        <p class="contact-note">
+          Replace <strong>YOUR_EMAIL@example.com</strong> and the LinkedIn placeholders
+          before publishing your final version.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Kirin Zhou.</p>
+      <p>Built for GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
